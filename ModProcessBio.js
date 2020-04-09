@@ -156,20 +156,20 @@ function getxy(){
     let x;
     let y;
     if(side===1){       // each number correspond to a side of the membrane
-        x = get_random_number((x_mb+30),(x_mb+w_mb-30));
+        x = get_random_number((x_mb+30),(x_mb+w_mb-55));
         y = y_mb-20;
     }
     if(side===2){
         x = x_mb + w_mb - 20;
-        y = get_random_number((y_mb+30),(y_mb+h_mb-30));
+        y = get_random_number((y_mb+30),(y_mb+h_mb-55));
     }
     if(side===3){
-        x = get_random_number((x_mb+30),(x_mb+w_mb-30));
+        x = get_random_number((x_mb+30),(x_mb+w_mb-55));
         y = y_mb + h_mb -20;
     }
     if(side===4){
         x = x_mb - 20;
-        y = get_random_number((y_mb+30),(y_mb+h_mb-30));
+        y = get_random_number((y_mb+30),(y_mb+h_mb-55));
     }
     return [x,y];
 } 
