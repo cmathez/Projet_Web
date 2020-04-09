@@ -220,7 +220,6 @@ while (neurotransmitters.length < nb_neurotransmitters) {
 var receptors = [];                     // creation of a list to put into receptors
 var nb_receptors = get_random_number(12,18);
 while (receptors.length < nb_receptors){
-    let receptor;
     let coordonate = getxy();           // creation of random positions on sides of membrane
     let x = coordonate[0];
     let y = coordonate[1];
