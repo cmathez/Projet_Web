@@ -151,7 +151,7 @@ function get_random_float_number(min,max) {
 
         // function to get random coordonate(x,y) for closed receptors
 
-function getxy(){
+function get_xy(){
     let side = get_random_number(1,5); 
     let x;
     let y;
@@ -220,7 +220,7 @@ while (neurotransmitters.length < nb_neurotransmitters) {
 var receptors = [];                     // creation of a list to put into receptors
 var nb_receptors = get_random_number(12,18);
 while (receptors.length < nb_receptors){
-    let coordonate = getxy();           // creation of random positions on sides of membrane
+    let coordonate = get_xy();           // creation of random positions on sides of membrane
     let x = coordonate[0];
     let y = coordonate[1];
     let receptor = new Receptors(       // creation of a receptor
